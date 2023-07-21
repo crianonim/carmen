@@ -2,5 +2,4 @@ elm-stuff/
 node_modules/
 .idea
 .parcel-cache
-dist
 db-*.json
