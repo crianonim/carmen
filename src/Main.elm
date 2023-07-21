@@ -37,9 +37,10 @@ update msg model =
 
 view : Model -> Html msg
 view model =
-    Html.div [ Attrs.class "border border-slate-500" ]
+    Html.div [ Attrs.class "p-1" ]
         [ Html.h1 [] [ Html.text "Carmen Herrera" ]
-        , Html.div [ Attrs.class "border border-slate-500 w-[300px] " ]
+        , Html.h2 [ Attrs.class "italic" ] [ Html.text "Blanco y Verde" ]
+        , Html.div [ Attrs.class "w-full p-4" ]
             [ Svg.svg
                 [ Svg.width "100%"
                 , Svg.viewBox "0 0 1111 1257"
