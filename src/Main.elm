@@ -82,7 +82,7 @@ view model =
         h =
             424 + model.height |> String.fromInt
     in
-    Html.div [ Attrs.class "p-1" ]
+    Html.div [ Attrs.class "p-1 max-w-lg" ]
         [ Html.h1 [] [ Html.text "Carmen Herrera" ]
         , Html.h2 [ Attrs.class "italic" ] [ Html.text <| "Blanco y " ++ colorToName model.color ]
         , Html.div [ Attrs.class "w-full p-4" ]
@@ -98,9 +98,9 @@ view model =
                     []
                 ]
             ]
-        , Html.div [ Attrs.class "flex justify-center gap-2" ]
-            [ Html.button [ Attrs.class "text-white w-8 bg-slate-500 p-1 rounded", Events.onClick <| HeightChange -10 ] [ Html.text "↑" ]
-            , Html.button [ Attrs.class "text-white  w-8 bg-slate-500 p-1 rounded", Events.onClick <| HeightChange 10 ] [ Html.text "↓" ]
+        , Html.div [ Attrs.class "flex justify-center gap-2 select-none" ]
+            [ Html.button [ Attrs.class "text-white w-8 bg-slate-500 p-1 rounded", Events.onClick <| HeightChange -20 ] [ Html.text "↑" ]
+            , Html.button [ Attrs.class "text-white  w-8 bg-slate-500 p-1 rounded", Events.onClick <| HeightChange 20 ] [ Html.text "↓" ]
             , Html.button [ Attrs.class "text-white bg-[#017f45] p-1 rounded", Events.onClick <| ColorChange Green ] [ Html.text "Verde" ]
             , Html.button [ Attrs.class "text-black bg-[#fdd86d] p-1 rounded", Events.onClick <| ColorChange Yellow ] [ Html.text "Amarillo" ]
             , Html.button [ Attrs.class "text-white bg-[#f73116] p-1 rounded", Events.onClick <| ColorChange Red ] [ Html.text "Rojo" ]
