@@ -6,9 +6,9 @@
     "index.html"
   ],
   "scripts": {
-    "build": "parcel build --dist-dir docs --no-source-maps",
-    "watch": "parcel watch --dist-dir docs --no-source-maps",
-    "serve" : "http-server docs -c-1",
+    "build": "parcel build --no-source-maps",
+    "watch": "parcel watch --no-source-maps",
+    "serve" : "http-server dist -c-1",
     "test": "elm-test"
   },
   "license": "UNLICENSED",
