@@ -4,6 +4,6 @@ import { Elm } from './src/Main.elm';
 var div = document.getElementById('main');
 const app = Elm.Main.init({
   node: div,
-  flags: {}
+  flags: ""
   }
 );
